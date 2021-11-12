@@ -1,31 +1,27 @@
-1)  git push
-2)  git pull
-3)  git merge
-4)  go to submodule -> git merge -> go back -> git merge
-5)  in git folder / .git / remote
-6)
-        1. Good distributed model as each developer gets a local repository with a full history of commits which makes git fast compared to other VCs.
-        2. Branching capabilities and merging are easy (as they are cheap), good data integrity.
-        3. They are free and open-source we can easily download the source code and performs changes to it. They can handle larger projects efficiently.
-        4. The push/pull operations are faster with a simple They save time and developers can fetch and create pull requests without switching.
-        5. Data redundancy and replications. Add ons can be written in many languages.
-        6. They have good and faster network performance and superior disk utilization and they think about its data like a sequence of snapshots.
-        7. The object model is very simple and minimizes push/pull data transfers.
-7)  
-        1. GIT requires technical excellence and it is slower on windows. They have tedious command lines to input and donвЂ™t track renames.
-        2. They have poor GUI and usability. And also, they take a lot of resources which slows down the performance.
-        3. GIT doesnвЂ™t support checking out sub-trees. For each project, the central service would need to be set up for multiple package repositories.
-        4. It lacks window support and doesnвЂ™t track empty folders.
-        5. There is no built-in access control and doesnвЂ™t support binary files.
-        6. They do not provide access control mechanisms in case of security.
-        7. The process of Packing is very expensive completely.
-8)  .git folder inside a project
-9)  Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source
-10) updating from remote
-11) comming
-12) adding some changes
-13) using branches help you organize the workflow more efficiently and rather effortlessly
-14) join two or more development histories together
-15) event that takes place when Git is unable to automatically resolve differences in code between two commits
-16) modifications were only in one branch
-17) yes
+1.git push
+2.git pull
+3.git merge
+4.go to submodule -> git merge -> go back -> git merge
+5.in git folder / .git / remote
+6.Системи контролю версії надають ряд додаткових можливостей:
+- Можливість створення різних варіантів одного документу;
+- Документування всіх змін (коли ким було змінено/додано, хто який рядок змінив);
+- Реалізує функцію контролю доступу користувачів до файлів.
+- Дозволяє створювати документацію проєкту з поетапним записом змін в залежності від версії;
+- Дозволяє давати пояснення до змін та документувати їх;
+7.Недоліки:
+- Оновлення робочої копії та збереження змін можливе лише за наявності мережевого з'єднання з основним сервером.
+-Не можливо контролювати доступ до файлів;
+-Відсутня загальна нумерація версій файлів;
+-Потрібно значно більше дискового простору на сервері для зберігання всіх гілок як глобальних, так й локальних;
+-Відсутня можливість блокування файлів.
+8.Репозиторій — спеціальний сервер, на якому зберігається і з якого можна завантажити програмне забезпечення.
+9.Git відстежує зміни, які ви вносите у файли, тож у вас є запис про те, що було зроблено, і ви можете повернутися до певних версій, якщо вам знадобиться. Git також спрощує співпрацю, дозволяючи об’єднувати зміни, внесені кількома людьми, в одне джерело.
+10.Це оновлення робочої копії проєкту, коли інші користувачі внесли до неї якісь зміни.
+11.Фіксація змін проєкту - це результат злиття гілок.
+12.Модифікація проєкту - це покращення проєкта та додавання до нього змін.
+13.Гілки зазвичай використовують для зберігання експериментальних, незавершених та повністю робочих версій проєкту.
+14.Команда git merge виконує злиття окремих напрямів розробки, створених за допомогою команди git branch, в єдину гілку.
+15.Якщо один користувач внесе зміни в документ та виконає злиття— то конфлікту не буде. Але якщо після цього інший користувач змінить документ в тих же рядках, що і перший — то виникне конфлікт.
+16.Якщо у вас немає локальних змін, злиття відбудеться само собою. Якщо ж у вас є локальні зміни, Git автоматично зробить злиття і повідомить про будь-які конфлікти.
+17.Чи призводить видалення та зміна одного і того ж файлу або каталогу у різних версіях до конфлікту при їх злитті? Ні, не призводить.
